@@ -141,14 +141,25 @@ void output(char *now, char *cipher){
 		output(str, cipher); 
 	}
 	else{
-		for(i=0;i<26;i++){
-			if(exist[i])
-				continue; 
-			strcpy(str, now); 
-			str[strlen(now)] = i+'A'; 
-			str[strlen(now)+1] = '\0'; 
-			output(str, cipher); 	
-		}	
+		for(i=0;i<len;i++){
+			if(cipher[i]==cipher[len]){
+				strcpy(str, now); 
+				str[len] = str[i]; 
+				str[len+1] = '\0'; 
+				output(str, cipher); 	
+				break;
+			}
+		}
+		if(i==len) {
+			for(i=0;i<26;i++){
+				if(exist[i])
+					continue; 
+				strcpy(str, now); 
+				str[len] = i+'A'; 
+				str[len+1] = '\0'; 
+				output(str, cipher); 	
+			}	
+		}
 	}
 }
 
