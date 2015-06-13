@@ -15,7 +15,7 @@ n-bit plaintext (or ciphertext) in Hex format shown on screen.
 ### (for encryption)
 
 #### Sample 1: 256-bit plaintext
-** Input.txt: **
+##### Input.txt: **
 01 23 45 67 89 AB CD EF FE DC BA 98 76 54 32 10 01 23 45 67 89 AB CD EF FE DC BA 98 76 54 32 10
 ** Key.txt: **
 0F 15 71 C9 47 D9 E8 59 0C B7 AD D6 AF 7F 67 98
