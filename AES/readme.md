@@ -19,6 +19,7 @@ n-bit plaintext (or ciphertext) in Hex format shown on screen.
 01 23 45 67 89 AB CD EF FE DC BA 98 76 54 32 10 01 23 45 67 89 AB CD EF FE DC BA 98 76 54 32 10
 ##### Key.txt: 
 0F 15 71 C9 47 D9 E8 59 0C B7 AD D6 AF 7F 67 98
+
 89 76 F7 FA 6D DA 7B C0 95 8E 9D 74 9C 17 51 F0
 
 #### Sample 2: 192-bit plaintext
@@ -26,6 +27,7 @@ n-bit plaintext (or ciphertext) in Hex format shown on screen.
 01 23 45 67 89 AB CD EF FE DC BA 98 76 54 32 10 01 23 45 67 89 AB CD EF
 ##### Key.txt: 
 0F 15 71 C9 47 D9 E8 59 0C B7 AD D6 AF 7F 67 98
+
 89 76 F7 FA 6D DA 7B C0 95 8E 9D 74 9C 17 51 F0
 
 ### (for decryption)
@@ -35,6 +37,7 @@ n-bit plaintext (or ciphertext) in Hex format shown on screen.
 9B 19 21 FB 77 0E 46 B9 E4 FB BB B4 3E 9A F6 05 F1 C4 FD B5 0C 35 AF 98 24 4D 66 62 DA 35 26 53
 ##### Key.txt: 
 0F 15 71 C9 47 D9 E8 59 0C B7 AD D6 AF 7F 67 98
+
 89 76 F7 FA 6D DA 7B C0 95 8E 9D 74 9C 17 51 F0
 
 #### Sample 2: 192-bit plaintext
@@ -42,6 +45,7 @@ n-bit plaintext (or ciphertext) in Hex format shown on screen.
 3E AD 3E B4 5A 0C 10 D1 8F 55 FB BF 0B 45 7E 8A 9B 19 21 F8 77 0E 46 B9
 ##### Key.txt: 
 0F 15 71 C9 47 D9 E8 59 0C B7 AD D6 AF 7F 67 98
+
 89 76 F7 FA 6D DA 7B C0 95 8E 9D 74 9C 17 51 F0
 
 ## Output for the Sa,ple Input
