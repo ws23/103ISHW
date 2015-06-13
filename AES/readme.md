@@ -34,7 +34,7 @@ n-bit plaintext (or ciphertext) in Hex format shown on screen.
 
 #### Sample 1: 256-bit plaintext
 ##### Input.txt: 
-9B 19 21 FB 77 0E 46 B9 E4 FB BB B4 3E 9A F6 05 F1 C4 FD B5 0C 35 AF 98 24 4D 66 62 DA 35 26 53
+9B 19 21 F8 77 0E 46 B9 E4 FB BB B4 3E 9A F6 05 F1 C4 FD B5 0C 35 AF 98 24 4D 66 62 DA 35 26 53
 ##### Key.txt: 
 0F 15 71 C9 47 D9 E8 59 0C B7 AD D6 AF 7F 67 98
 
