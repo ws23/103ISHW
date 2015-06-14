@@ -9,13 +9,18 @@ void XTSAESBlock(const uint8_t[], const uint8_t[], uint8_t, uint8_t[], uint8_t[]
 
 int main(int argc, char *argv[]){
 
-	if(argc!=4 || (strcmp(argv[1], "-d") && strcmp(argv[1], "-e")))
-		printf("Usage: %s <-e/-d filename> <key's filename>\n", argv[0]); 
+	if((argc!=2 && argc!=3) || (strcmp(argv[1], "-d") && strcmp(argv[1], "-e")))
+		printf("\nUsage: %s <-e/-d> [filename]\n", argv[0]); 
 	else{
 		uint8_t k1[16], k2[16];
 		uint8_t input[LENGTH][16], output[LENGTH][16]; 
-		FILE *fin = fopen(argv[2], "r");
+		FILE *fin;
 		int i, j, len;
+
+		if(argc==2)
+			fin = fopen("input.txt", "r"); 
+		else
+			fin = fopen(argv[2], "r"); 
 
 		// read the input file 
 		for(i=0;!feof(fin);i++){
@@ -26,7 +31,7 @@ int main(int argc, char *argv[]){
 		fclose(fin); 
 
 		// read the keys
-		fin = fopen(argv[3], "r"); 
+		fin = fopen("key.txt", "r"); 
 		for(i=0;i<16;i++)
 			fscanf(fin, "%X", &k1[i]); 
 		for(i=0;i<16;i++)
@@ -114,7 +119,6 @@ void XTSAESBlock(const uint8_t key1[], const uint8_t key2[], uint8_t counter, ui
 	uint8_t tmp[16], buff[16], buffer[16], counters[16]; 
 	int i; 
 
-	printf("counter = %X\n", counter); 
 	memset(counters, 0, sizeof(counters)); 
 	counters[15] = counter; 
 
