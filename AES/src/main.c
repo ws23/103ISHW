@@ -23,12 +23,21 @@ int main(int argc, char *argv[]){
 			fin = fopen(argv[2], "r"); 
 
 		// read the input file 
-		for(i=0;!feof(fin);i++){
+/*		for(i=0;!feof(fin);i++){
 			for(j=0;!feof(fin)&&j<16; j++)
 				fscanf(fin, "%X", &input[i][j]); 
 		}
 		len = i*16 - (17-j);
 		fclose(fin); 
+*/
+		for(i=0, j=0; fscanf(fin, "%X", &input[i][j])!=EOF; j++){
+			if(j==15){
+				j = -1; 
+				i++; 	
+			}	
+		}
+		len = i*16 + j;
+		fclose(fin);   
 
 		// read the keys
 		fin = fopen("key.txt", "r"); 
